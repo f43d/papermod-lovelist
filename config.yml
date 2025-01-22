@@ -1,4 +1,4 @@
 baseURL: https://example.org/
 languageCode: zh-tw
 title: My New Hugo Site
-theme: ["PaperMod"]
+theme: "PaperMod"
