@@ -1,5 +1,308 @@
 [
-  { "id": 0, "text": "一起看日出", "checked": true },
-  { "id": 1, "text": "在京都賞楓", "checked": false },
-  { "id": 99, "text": "執子之手 與子偕老", "checked": true }
+  {
+    "id": 0,
+    "text": "在海中裸泳",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 1,
+    "text": "睇極光",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 2,
+    "text": "幫你做腳底按摩",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 3,
+    "text": "大帽山山頂睇日出",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 4,
+    "text": "過一個白色聖誕",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 5,
+    "text": "成日咩都唔做一口氣煲一套劇",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 6,
+    "text": "幫我打領呔",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 7,
+    "text": "食米芝連餐廳",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 8,
+    "text": "係公園搭營瞓晏覺",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 9,
+    "text": "照顧生病的你",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 10,
+    "text": "去慈山寺寫心經",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 11,
+    "text": "搵100個人同你講生日快樂",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 12,
+    "text": "同海豚一齊游泳",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 13,
+    "text": "睇烟花",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 14,
+    "text": "出海睇海豚",
+    "checked": true,
+    "link": "https://example.com"
+  },
+  {
+    "id": 15,
+    "text": "去林村許願樹許願",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 16,
+    "text": "參加兩個仔嘅大學畢業典禮",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 17,
+    "text": "看流星",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 18,
+    "text": "幫你剪腳甲",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 19,
+    "text": "同米奇老鼠映相",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 20,
+    "text": "赤腳行沙灘",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 21,
+    "text": "搭渡海小輪過海",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 22,
+    "text": "參觀大英博物館",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 23,
+    "text": "踩雙人單車",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 24,
+    "text": "落大雨共用一把遮",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 25,
+    "text": "去郊野公園烤肉",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 26,
+    "text": "去魚排釣魚",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 27,
+    "text": "去灣仔海旁撐船",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 28,
+    "text": "講鬼故氹你瞓",
+    "checked": true,
+    "link": "https://example.com"
+  },
+  {
+    "id": 29,
+    "text": "中秋節點有蠟燭既燈籠出街",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 30,
+    "text": "著情侶裝出街",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 31,
+    "text": "去魚排釣魚",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 32,
+    "text": "大家用一條頸巾",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 33,
+    "text": "去巴厘岛再度蜜月",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 34,
+    "text": "翻看之前寫比大家的情信",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 35,
+    "text": "瞓係床上食早餐",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 36,
+    "text": "食雞泡魚",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 37,
+    "text": "幫我打領呔",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 38,
+    "text": "坐摩天輪",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 39,
+    "text": "幫我剃光頭",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 40,
+    "text": "唱一首情歌比你聽",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 41,
+    "text": "一齊浸露天溫泉",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 42,
+    "text": "踩單車由上水去元朗",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 43,
+    "text": "去睇螢火蟲",
+    "checked": true,
+    "link": "https://example.com"
+  },
+  {
+    "id": 44,
+    "text": "電話 lock screen set 對方既相片",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 45,
+    "text": "去瑞士旅行",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 46,
+    "text": "去聽音樂會",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 47,
+    "text": "幫對方染髮",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 48,
+    "text": "食一樣從來未食過既地方菜",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 49,
+    "text": "摘士多啤梨",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 99,
+    "text": "執子之手 與子偕老",
+    "checked": false,
+    "link": "https://example.com"
+  }
 ]
