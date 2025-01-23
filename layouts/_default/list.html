@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <div class="bucket-list">
+    {{ range $index, $item := .Site.Data.list }}
+      <div class="list-item">
+        <!-- Number (00-99) -->
+        <span>{{ printf "%02d" $index }}</span>
+
+        <!-- Checkbox (Heart SVG) -->
+        <img 
+          src="/svg/checkboxes/{{ if $item.checked }}checked{{ else }}unchecked{{ end }}.svg" 
+          width="24" 
+          height="24"
+        >
+
+        <!-- Text -->
+        <span>{{ $item.text }}</span>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

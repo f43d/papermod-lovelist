@@ -1,4 +1,14 @@
-baseURL: https://example.org/
-languageCode: zh-tw
-title: My New Hugo Site
-theme: "PaperMod"
+baseURL: "https://buc.ketli.st"
+title: "我們的 100 件事"
+theme: PaperMod
+
+params:
+  # Disable PaperMod features we don’t need
+  homeInfoParams: false
+  socialIcons: false
+
+disableKinds:
+  - taxonomy
+  - term
+  - RSS
+  - sitemap
