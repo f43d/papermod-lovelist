@@ -6,6 +6,11 @@ params:
   # Disable PaperMod features we don’t need
   homeInfoParams: false
   socialIcons: false
+  # ...保留其他參數
+  assets:
+    css:
+      - extended/custom.css
+
 
 disableKinds:
   - taxonomy

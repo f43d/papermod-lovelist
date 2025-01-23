@@ -1,0 +1,14 @@
+/* Force list items to display in a single line */
+.list-item {
+    display: flex !important;
+    align-items: center;
+    gap: 3rem; /* Space between elements */
+    margin: 0.5rem 0;
+  }
+  
+  /* Target all child elements (number, checkbox, text) */
+  .list-item > * {
+    display: inline-block !important;
+    margin: 0 !important;
+  }
+  
