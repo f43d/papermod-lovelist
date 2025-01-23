@@ -1,20 +1,26 @@
 {{ define "main" }}
-  <div class="bucket-list">
-    {{ range $index, $item := .Site.Data.list }}
-      <div class="list-item">
-        <!-- Number (00-99) -->
-        <span>{{ printf "%02d" $index }}</span>
+<div class="bucket-list">
+  {{ range $index, $item := .Site.Data.list }}
+    <div class="list-item">
+      <!-- Adjusted Numbering -->
+      <span class="number">
+        {{ $displayNumber := add $index 1 }}
+        {{ if eq $displayNumber 100 }} <!-- For id=99, override to 99 -->
+          {{ $displayNumber = 99 }}
+        {{ end }}
+        {{ printf "%02d" $displayNumber }} <!-- Format as 01, 02...99 -->
+      </span>
 
-        <!-- Checkbox (Heart SVG) -->
-        <img 
-          src="/svg/checkboxes/{{ if $item.checked }}checked{{ else }}unchecked{{ end }}.svg" 
-          width="24" 
-          height="24"
-        >
+      <!-- Checkbox -->
+      <img 
+        src="/svg/checkboxes/{{ if $item.checked }}checked{{ else }}unchecked{{ end }}.svg" 
+        width="24" 
+        height="24"
+      >
 
-        <!-- Text -->
-        <span>{{ $item.text }}</span>
-      </div>
-    {{ end }}
-  </div>
+      <!-- Text -->
+      <span class="item-text">{{ $item.text }}</span>
+    </div>
+  {{ end }}
+</div>
 {{ end }}
