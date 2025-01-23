@@ -2,11 +2,11 @@
 <div class="bucket-list">
   {{ range $item := .Site.Data.list }}
     <div class="list-item">
-      <!-- Use $item.id directly -->
-      {{ $displayNumber := $item.id }}
-      <!-- For id=99, keep it as 99. For others, add +1 -->
-      {{ if ne $displayNumber 99 }}
-        {{ $displayNumber = add $displayNumber 1 }}
+      <!-- Convert $item.id to integer and calculate display number -->
+      {{ $id := int $item.id }}
+      {{ $displayNumber := $id }}
+      {{ if ne $id 99 }}
+        {{ $displayNumber = add $id 1 }}
       {{ end }}
       <span class="number">{{ printf "%02d" $displayNumber }}</span>
 
