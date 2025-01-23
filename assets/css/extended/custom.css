@@ -2,7 +2,7 @@
 .list-item {
     display: flex !important;
     align-items: center;
-    gap: 3rem; /* Space between elements */
+    gap: 1rem; /* Space between elements */
     margin: 0.5rem 0;
   }
   
