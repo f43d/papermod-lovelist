@@ -1,7 +1,5 @@
 [
   { "id": 0, "text": "一起看日出", "checked": true },
   { "id": 1, "text": "在京都賞楓", "checked": false },
-  { "id": 99, "text": "執子之手 與子偕老", "checked": true },
-
-  // ... (add 98 more items)
+  { "id": 99,"text": "執子之手 與子偕老", "checked": true}
 ]
