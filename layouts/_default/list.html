@@ -1,25 +1,24 @@
 {{ define "main" }}
-<div class="bucket-list">
-  {{ range $item := .Site.Data.list }}
-    <div class="list-item">
-      <!-- Convert $item.id to integer and calculate display number -->
-      {{ $id := int $item.id }}
-      {{ $displayNumber := $id }}
-      {{ if ne $id 99 }}
-        {{ $displayNumber = add $id 1 }}
-      {{ end }}
-      <span class="number">{{ printf "%02d" $displayNumber }}</span>
+  <div class="bucket-list">
+    {{ range $index, $item := .Site.Data.list }}
+      <div class="list-item">
+        <!-- Number SVG (01.svg to 99.svg) -->
+        <img 
+          src="/svg/numbers/{{ printf "%02d" (add $index 1) }}.svg" 
+          class="number" 
+          alt="Number {{ printf "%02d" (add $index 1) }}"
+        >
 
-      <!-- Checkbox -->
-      <img 
-        src="/svg/checkboxes/{{ if $item.checked }}checked{{ else }}unchecked{{ end }}.svg" 
-        width="24" 
-        height="24"
-      >
+        <!-- Checkbox SVG -->
+        <img 
+          src="/svg/checkboxes/{{ if $item.checked }}checked{{ else }}unchecked{{ end }}.svg" 
+          class="checkbox" 
+          alt="Checkbox"
+        >
 
-      <!-- Text -->
-      <span class="item-text">{{ $item.text }}</span>
-    </div>
-  {{ end }}
-</div>
+        <!-- Handwritten Text -->
+        <span class="item-text">{{ $item.text }}</span>
+      </div>
+    {{ end }}
+  </div>
 {{ end }}

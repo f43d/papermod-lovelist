@@ -11,4 +11,9 @@
     display: inline-block !important;
     margin: 0 !important;
   }
-  
+.number {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    margin-right: 1rem; /* Spacing between number and checkbox */
+  }
+   
