@@ -1,19 +1,34 @@
-/* Force list items to display in a single line */
-.list-item {
-    display: flex !important;
-    align-items: center;
-    gap: 1rem; /* Space between elements */
-    margin: 0.5rem 0;
-  }
+/* Number SVGs */
+.number-digit {
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    display: inline-block; /* Ensure SVGs stay inline */
+}
   
-  /* Target all child elements (number, checkbox, text) */
-  .list-item > * {
-    display: inline-block !important;
-    margin: 0 !important;
-  }
-.number {
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
-    margin-right: 1rem; /* Spacing between number and checkbox */
-  }
-   
+/* Heart Icon (Checkbox) */
+.checkbox {
+    width: 20px; /* Match number SVG size */
+    height: 20px; /* Match number SVG size */
+    display: inline-block; /* Ensure it stays inline */
+}
+  
+/* List Text */
+.item-text {
+    font-size: 1.25rem; /* Adjust as needed */
+    line-height: 1.5; /* Ensure proper vertical alignment */
+}
+  
+/* List Item Layout */
+.list-item {
+    display: flex;
+    align-items: center; /* Vertically center all items */
+    gap: 0.5rem; /* Adjust spacing between elements */
+}
+  
+/* Number Container */
+.number-container {
+    display: flex;
+    gap: 0.1rem; /* Adjust spacing between digits */
+    align-items: center; /* Vertically center digits */
+}
+  
