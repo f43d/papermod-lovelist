@@ -3,20 +3,11 @@
     {{ range $index, $item := .Site.Data.list }}
       <div class="list-item">
         <!-- Double-Digit Number SVG -->
-        <div class="number-container">
-          <!-- Tens Place SVG -->
-          <img 
-            src="/svg/numbers/{{ printf "%02d" (div $index 10) }}.svg" 
-            class="number-digit" 
-            alt="Tens Digit"
-          >
-          <!-- Units Place SVG -->
-          <img 
-            src="/svg/numbers/{{ printf "%02d" (mod $index 10) }}.svg" 
-            class="number-digit" 
-            alt="Units Digit"
-          >
-        </div>
+        <img 
+          src="/svg/numbers/{{ printf "%02d" $index }}.svg" 
+          class="number" 
+          alt="Number {{ printf "%02d" $index }}"
+        >
 
         <!-- Checkbox SVG -->
         <img 
