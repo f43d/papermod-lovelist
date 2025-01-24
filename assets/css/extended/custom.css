@@ -79,4 +79,32 @@
       margin: 0.5rem 0; /* Reduce spacing further */
     }
   }
-     
+
+/* Define the custom font */
+@font-face {
+  font-family: 'ChenYuluoyan-Thin';
+  src: url('/fonts/ChenYuluoyan-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply the custom font to the list text */
+.item-text {
+  font-family: 'ChenYuluoyan-Thin', sans-serif; /* Fallback to sans-serif */
+  font-size: 1.25rem; /* Adjust as needed */
+  line-height: 1.5; /* Ensure proper vertical alignment */
+}
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .item-text {
+    font-size: 1.1rem; /* Slightly smaller */
+  }
+}
+
+/* Mobile Styles (iPhone) */
+@media (max-width: 768px) {
+  .item-text {
+    font-size: 1rem; /* Smaller for mobile */
+  }
+}
+  
