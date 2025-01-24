@@ -57,4 +57,11 @@
       gap: 0.4rem;
     }
   }
-  
+/* Divider SVG */
+.divider {
+    width: 100%; /* Full width */
+    height: 2px; /* Adjust as needed */
+    margin: 1rem 0; /* Spacing above and below the divider */
+    display: block; /* Ensure it takes its own line */
+  }
+   
