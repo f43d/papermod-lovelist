@@ -91,7 +91,7 @@
 /* Apply the custom font to the list text */
 .item-text {
   font-family: 'ChenYuluoyan-Thin', sans-serif; /* Fallback to sans-serif */
-  font-size: 1.25rem; /* Adjust as needed */
+  font-size: 1.7rem; /* Adjust as needed */
   line-height: 1.5; /* Ensure proper vertical alignment */
 }
 /* Tablet Styles */
