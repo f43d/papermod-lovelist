@@ -19,6 +19,15 @@
         <!-- Handwritten Text -->
         <span class="item-text">{{ $item.text }}</span>
       </div>
+
+      <!-- Add Divider (except after the last item) -->
+      {{ if lt $index (sub (len $.Site.Data.list) 1) }}
+        <img 
+          src="/svg/divider.svg" 
+          class="divider" 
+          alt="Divider"
+        >
+      {{ end }}
     {{ end }}
   </div>
 {{ end }}
