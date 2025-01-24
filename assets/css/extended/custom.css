@@ -1,34 +1,60 @@
-/* Number SVGs */
-.number-digit {
-    width: 30px; /* Adjust as needed */
-    height: 30px; /* Adjust as needed */
-    display: inline-block; /* Ensure SVGs stay inline */
-}
+/* Base Styles (Desktop) */
+.number {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+  }
   
-/* Number Container */
-.number-container {
+  .checkbox {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+  }
+  
+  .item-text {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  .list-item {
     display: flex;
-    gap: 0; /* Remove spacing between digits */
-    align-items: center; /* Vertically center digits */
-}
+    align-items: center;
+    gap: 0.75rem;
+  }
   
-/* Heart Icon (Checkbox) */
-.checkbox {
-    width: 30px; /* Match number SVG size */
-    height: 30px; /* Match number SVG size */
-    display: inline-block; /* Ensure it stays inline */
-}
+  /* Tablet Styles */
+  @media (max-width: 1024px) {
+    .number {
+      width: 36px;
+      height: 20px;
+    }
+    .checkbox {
+      width: 20px;
+      height: 20px;
+    }
+    .item-text {
+      font-size: 1.1rem;
+    }
+    .list-item {
+      gap: 0.5rem;
+    }
+  }
   
-/* List Text */
-.item-text {
-    font-size: 1.5rem; /* Adjust as needed */
-    line-height: 1.5; /* Ensure proper vertical alignment */
-}
-  
-/* List Item Layout */
-.list-item {
-    display: flex;
-    align-items: center; /* Vertically center all items */
-    gap: 0.5rem; /* Adjust spacing between elements */
-}
+  /* Mobile Styles (iPhone) */
+  @media (max-width: 768px) {
+    .number {
+      width: 30px;
+      height: 18px;
+    }
+    .checkbox {
+      width: 18px;
+      height: 18px;
+    }
+    .item-text {
+      font-size: 1rem;
+    }
+    .list-item {
+      gap: 0.4rem;
+    }
+  }
   
