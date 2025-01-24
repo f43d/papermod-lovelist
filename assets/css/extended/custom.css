@@ -64,4 +64,19 @@
     margin: 1rem 0; /* Spacing above and below the divider */
     display: block; /* Ensure it takes its own line */
   }
-   
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .divider {
+      height: 1.5px; /* Slightly thinner */
+      margin: 0.75rem 0; /* Reduce spacing */
+    }
+  }
+  
+  /* Mobile Styles (iPhone) */
+  @media (max-width: 768px) {
+    .divider {
+      height: 1px; /* Thinner for mobile */
+      margin: 0.5rem 0; /* Reduce spacing further */
+    }
+  }
+     
