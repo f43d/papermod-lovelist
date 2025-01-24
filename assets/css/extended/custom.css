@@ -1,20 +1,27 @@
 /* Number SVGs */
 .number-digit {
-    width: 20px; /* Adjust as needed */
-    height: 20px; /* Adjust as needed */
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
     display: inline-block; /* Ensure SVGs stay inline */
+}
+  
+/* Number Container */
+.number-container {
+    display: flex;
+    gap: 0; /* Remove spacing between digits */
+    align-items: center; /* Vertically center digits */
 }
   
 /* Heart Icon (Checkbox) */
 .checkbox {
-    width: 20px; /* Match number SVG size */
-    height: 20px; /* Match number SVG size */
+    width: 30px; /* Match number SVG size */
+    height: 30px; /* Match number SVG size */
     display: inline-block; /* Ensure it stays inline */
 }
   
 /* List Text */
 .item-text {
-    font-size: 1.25rem; /* Adjust as needed */
+    font-size: 1.5rem; /* Adjust as needed */
     line-height: 1.5; /* Ensure proper vertical alignment */
 }
   
@@ -23,12 +30,5 @@
     display: flex;
     align-items: center; /* Vertically center all items */
     gap: 0.5rem; /* Adjust spacing between elements */
-}
-  
-/* Number Container */
-.number-container {
-    display: flex;
-    gap: 0.1rem; /* Adjust spacing between digits */
-    align-items: center; /* Vertically center digits */
 }
   
