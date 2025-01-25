@@ -19,8 +19,8 @@
 
 /* Checkbox SVG */
 .checkbox {
-  width: 32px; /* Increased size */
-  height: 32px; /* Increased size */
+  width: 48px; /* Increased size */
+  height: 48px; /* Increased size */
   display: inline-block;
 }
 
@@ -31,7 +31,7 @@
 
 /* Text Number */
 .text-number {
-  font-size: 1.25rem; /* Match list content size */
+  font-size: 1.5rem; /* Match list content size */
   font-family: 'ChenYuluoyan-Thin', sans-serif; /* Apply custom font */
 }
 
@@ -42,7 +42,7 @@
 
 /* Handwritten Text */
 .item-text {
-  font-size: 1.25rem; /* Adjust as needed */
+  font-size: 1.5rem; /* Adjust as needed */
   line-height: 1.5; /* Ensure proper vertical alignment */
   font-family: 'ChenYuluoyan-Thin', sans-serif; /* Apply custom font */
 }
