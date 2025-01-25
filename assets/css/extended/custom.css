@@ -1,13 +1,12 @@
 /* Define the custom font */
 @font-face {
   font-family: 'DC-CST';
-  src: url('/fonts/DC-CST.woff2') format('woff2'), /* Modern browsers */
-       url('/fonts/DC-CST.woff') format('woff'), /* Fallback for older browsers */
-       url('/fonts/DC-CST.ttf') format('truetype'); /* Fallback for very old browsers */
+  src: url('/fonts/DC-CST.woff2') format('woff2'),
+       url('/fonts/DC-CST.woff') format('woff'),
+       url('/fonts/DC-CST.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 
 /* Ensure html and body cover the full viewport height */
 html, body {
@@ -15,8 +14,8 @@ html, body {
 }
 
 /* Apply the background image to the body */
-body {
-  background-image: url(/images/background.jpg) !important; /* Enforce background image */
+html body {
+  background-image: url(/images/background.jpg) !important;
   background-size: cover !important;
   background-position: 50% !important;
   background-repeat: no-repeat !important;
@@ -24,12 +23,15 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  font-family: 'DC-CST', sans-serif;
+  font-family: 'DC-CST', sans-serif !important;
+  font-size: 18px;
+  line-height: 1.6;
+  word-break: break-word;
 }
 
 /* Make the bucket list container transparent */
 .bucket-list {
-  background-color: transparent !important; /* Remove white background */
+  background-color: transparent !important;
   padding: 2rem;
   border-radius: 8px;
   margin: 2rem auto;
@@ -98,7 +100,7 @@ body {
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
-  body {
+  html body {
     background-size: contain !important; /* Adjust for tablets */
   }
   .bucket-list {
@@ -121,7 +123,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  body {
+  html body {
     background-size: cover !important; /* Adjust for mobile */
   }
   .bucket-list {
@@ -148,7 +150,7 @@ body {
 .list-item.checked .item-text,
 .list-item.checked .text-number {
   position: relative;
-  opacity: 0.4; /* 40% opacity */
+  opacity: 0.6; /* 60% opacity */
 }
 
 .list-item.checked .item-text::after,
@@ -161,5 +163,5 @@ body {
   height: 2px; /* Thickness of the cross-out line */
   background-color: #2f5061; /* Match the text color */
   transform: translateY(-50%) rotate(-5deg); /* Slight angle for the cross-out line */
-  opacity: 0.4; /* 40% opacity */
+  opacity: 0.6; /* 60% opacity */
 }
