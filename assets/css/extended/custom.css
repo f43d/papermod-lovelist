@@ -159,7 +159,7 @@ body {
   top: 50%;
   width: 100%;
   height: 2px; /* Thickness of the cross-out line */
-  background-color: #FBEBE2; /* Explicit color for the cross-out line */
+  background-color: #2f5061; /* Match the text color */
   transform: translateY(-50%) rotate(-5deg); /* Slight angle for the cross-out line */
   opacity: 0.85; /* 85% opacity */
 }
