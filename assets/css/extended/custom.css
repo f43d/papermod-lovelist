@@ -68,6 +68,13 @@ body {
 .text-number {
   font-size: 1.7rem; /* Increased size */
   font-family: 'ChenYuluoyan-Thin', sans-serif;
+  color: #FBEBE2; /* Base color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for text number */
+.text-number:hover {
+  color: #FBE2F2; /* Hover color */
 }
 
 /* Padding After Text Number */
@@ -80,6 +87,13 @@ body {
   font-size: 1.7rem; /* Increased size */
   line-height: 1.5;
   font-family: 'ChenYuluoyan-Thin', sans-serif;
+  color: #FBEBE2; /* Base color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for item text */
+.item-text:hover {
+  color: #FBE2F2; /* Hover color */
 }
 
 /* Responsive Adjustments */
