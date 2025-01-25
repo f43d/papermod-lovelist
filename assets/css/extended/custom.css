@@ -1,10 +1,13 @@
 /* Define the custom font */
 @font-face {
-  font-family: 'ChenYuluoyan-Thin';
-  src: url('/fonts/ChenYuluoyan-Thin.ttf') format('truetype');
+  font-family: 'DC-CST';
+  src: url('/fonts/DC-CST.woff2') format('woff2'), /* Modern browsers */
+       url('/fonts/DC-CST.woff') format('woff'), /* Fallback for older browsers */
+       url('/fonts/DC-CST.ttf') format('truetype'); /* Fallback for very old browsers */
   font-weight: normal;
   font-style: normal;
 }
+
 
 /* Ensure html and body cover the full viewport height */
 html, body {
@@ -21,7 +24,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  font-family: 'ChenYuluoyan-Thin', sans-serif;
+  font-family: 'DC-CST', sans-serif;
 }
 
 /* Make the bucket list container transparent */
@@ -67,7 +70,7 @@ body {
 /* Text Number */
 .text-number {
   font-size: 1.7rem; /* Increased size */
-  font-family: 'ChenYuluoyan-Thin', sans-serif;
+  font-family: 'DC-CST', sans-serif;
   color: #2f5061; /* Base color */
   transition: color 0.3s ease; /* Smooth transition */
 }
@@ -81,7 +84,7 @@ body {
 .item-text {
   font-size: 1.7rem; /* Increased size */
   line-height: 1.5;
-  font-family: 'ChenYuluoyan-Thin', sans-serif;
+  font-family: 'DC-CST', sans-serif;
   color: #2f5061; /* Base color */
   transition: color 0.3s ease; /* Smooth transition */
 }
