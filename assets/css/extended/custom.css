@@ -72,11 +72,6 @@ body {
   transition: color 0.3s ease; /* Smooth transition */
 }
 
-/* Hover effect for text number */
-.text-number:hover {
-  color: #E57F84; /* Hover color */
-}
-
 /* Padding After Text Number */
 .padding-after-number {
   width: 1rem;
@@ -91,9 +86,11 @@ body {
   transition: color 0.3s ease; /* Smooth transition */
 }
 
-/* Hover effect for item text */
-.item-text:hover {
+/* Hover effect for list items */
+.list-item:hover .text-number,
+.list-item:hover .item-text {
   color: #E57F84; /* Hover color */
+  transition: color 0.3s ease; /* Smooth transition */
 }
 
 /* Responsive Adjustments */
