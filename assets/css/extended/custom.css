@@ -6,111 +6,114 @@
   font-style: normal;
 }
 
+/* Ensure html and body cover the full viewport height */
+html, body {
+  height: 100%;
+}
+
 /* Apply the background image to the body */
 body {
-  background-image: url('/images/background.jpg'); /* Path to your image */
-  background-size: cover; /* Cover the entire screen */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent repeating */
-  background-attachment: fixed; /* Fixed background (optional) */
-  margin: 0; /* Remove default body margin */
-  padding: 0; /* Remove default body padding */
-  min-height: 100vh; /* Ensure the body covers the full viewport height */
-  font-family: 'ChenYuluoyan-Thin', sans-serif; /* Apply custom font globally */
-  border: 5px solid red; /* Debugging: Remove after testing */
-  background-color: yellow; /* Debugging: Remove after testing */
+  background-image: url(/images/background.jpg) !important; /* Enforce background image */
+  background-size: cover !important;
+  background-position: 50% !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'ChenYuluoyan-Thin', sans-serif;
 }
 
 /* Ensure content is readable over the background */
 .bucket-list {
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-  padding: 2rem; /* Add padding for better readability */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  margin: 2rem auto; /* Center the list */
-  max-width: 800px; /* Limit the width for better readability */
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 800px;
 }
 
 /* List item styling */
 .list-item {
   display: flex;
-  align-items: center; /* Vertically center all items */
-  margin-bottom: 1rem; /* Spacing between items */
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 /* Checkbox SVG */
 .checkbox {
-  width: 32px; /* Increased size */
-  height: 32px; /* Increased size */
+  width: 48px;
+  height: 48px;
   display: inline-block;
 }
 
 /* Padding After Checkbox */
 .padding-after-checkbox {
-  width: 0.75rem; /* Adjust as needed */
+  width: 0.75rem;
 }
 
 /* Text Number */
 .text-number {
-  font-size: 1.25rem; /* Match list content size */
-  font-family: 'ChenYuluoyan-Thin', sans-serif; /* Apply custom font */
+  font-size: 1.5rem;
+  font-family: 'ChenYuluoyan-Thin', sans-serif;
 }
 
 /* Padding After Text Number */
 .padding-after-number {
-  width: 1rem; /* Adjust as needed */
+  width: 1rem;
 }
 
 /* Handwritten Text */
 .item-text {
-  font-size: 1.25rem; /* Adjust as needed */
-  line-height: 1.5; /* Ensure proper vertical alignment */
-  font-family: 'ChenYuluoyan-Thin', sans-serif; /* Apply custom font */
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: 'ChenYuluoyan-Thin', sans-serif;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
   body {
-    background-size: contain; /* Fit the image within the screen */
+    background-size: contain !important; /* Adjust for tablets */
   }
   .bucket-list {
-    padding: 1.5rem; /* Reduce padding */
-    margin: 1.5rem auto; /* Adjust margin */
+    padding: 1.5rem;
+    margin: 1.5rem auto;
   }
   .checkbox {
-    width: 28px; /* Slightly smaller */
-    height: 28px; /* Slightly smaller */
+    width: 28px;
+    height: 28px;
   }
   .padding-after-checkbox {
-    width: 0.5rem; /* Reduce padding */
+    width: 0.5rem;
   }
   .text-number, .item-text {
-    font-size: 1.1rem; /* Slightly smaller */
+    font-size: 1.1rem;
   }
   .padding-after-number {
-    width: 0.75rem; /* Reduce padding */
+    width: 0.75rem;
   }
 }
 
 @media (max-width: 768px) {
   body {
-    background-size: cover; /* Cover the screen */
+    background-size: cover !important; /* Adjust for mobile */
   }
   .bucket-list {
-    padding: 1rem; /* Reduce padding further */
-    margin: 1rem auto; /* Adjust margin */
-    max-width: 90%; /* Increase width for better readability */
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 90%;
   }
   .checkbox {
-    width: 24px; /* Smaller for mobile */
-    height: 24px; /* Smaller for mobile */
+    width: 24px;
+    height: 24px;
   }
   .padding-after-checkbox {
-    width: 0.4rem; /* Reduce padding further */
+    width: 0.4rem;
   }
   .text-number, .item-text {
-    font-size: 1rem; /* Smaller for mobile */
+    font-size: 1rem;
   }
   .padding-after-number {
-    width: 0.5rem; /* Reduce padding further */
+    width: 0.5rem;
   }
 }
