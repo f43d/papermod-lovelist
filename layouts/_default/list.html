@@ -1,32 +1,26 @@
 {{ define "main" }}
   <div class="bucket-list">
     {{ range $index, $item := .Site.Data.list }}
-      <!-- Generate random numbers for checked and unchecked SVGs -->
       {{ $randomChecked := shuffle (seq 1 4) | first 1 }}
       {{ $randomUnchecked := shuffle (seq 1 4) | first 1 }}
 
-      <div class="list-item">
-        <!-- Checkbox SVG -->
+      <!-- Add .checked class conditionally -->
+      <div class="list-item {{ if $item.checked }}checked{{ end }}"> <!-- Updated line -->
         <img 
           src="/svg/checkboxes/{{ if $item.checked }}checked{{ index $randomChecked 0 }}{{ else }}unchecked{{ index $randomUnchecked 0 }}{{ end }}.svg" 
           class="checkbox" 
           alt="Checkbox"
         >
-
-        <!-- Padding After Checkbox -->
         <span class="padding-after-checkbox"></span>
-
-        <!-- Text Number (00., 01., 02., ..., 99.) -->
         <span class="text-number">
           {{ printf "%02d." $index }}
         </span>
-
-        <!-- Padding After Text Number -->
         <span class="padding-after-number"></span>
 
-        <!-- Handwritten Text -->
-        <span class="item-text">{{ $item.text }}</span>
+        <!-- Optional: Make text clickable using the link field -->
+        <a href="{{ $item.link }}" class="item-text">{{ $item.text }}</a> <!-- Updated line -->
       </div>
     {{ end }}
   </div>
 {{ end }}
+
