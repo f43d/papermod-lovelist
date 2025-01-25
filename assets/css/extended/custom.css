@@ -6,11 +6,29 @@
   font-style: normal;
 }
 
-/* Base Styles */
-.bucket-list {
+/* Apply the background image to the body */
+body {
+  background-image: url('/images/background.jpg'); /* Path to your image */
+  background-size: cover; /* Cover the entire screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-attachment: fixed; /* Fixed background (optional) */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  min-height: 100vh; /* Ensure the body covers the full viewport height */
   font-family: 'ChenYuluoyan-Thin', sans-serif; /* Apply custom font globally */
 }
 
+/* Ensure content is readable over the background */
+.bucket-list {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 2rem; /* Add padding for better readability */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  margin: 2rem auto; /* Center the list */
+  max-width: 800px; /* Limit the width for better readability */
+}
+
+/* List item styling */
 .list-item {
   display: flex;
   align-items: center; /* Vertically center all items */
@@ -49,6 +67,13 @@
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
+  body {
+    background-size: contain; /* Fit the image within the screen */
+  }
+  .bucket-list {
+    padding: 1.5rem; /* Reduce padding */
+    margin: 1.5rem auto; /* Adjust margin */
+  }
   .checkbox {
     width: 28px; /* Slightly smaller */
     height: 28px; /* Slightly smaller */
@@ -65,6 +90,14 @@
 }
 
 @media (max-width: 768px) {
+  body {
+    background-size: cover; /* Cover the screen */
+  }
+  .bucket-list {
+    padding: 1rem; /* Reduce padding further */
+    margin: 1rem auto; /* Adjust margin */
+    max-width: 90%; /* Increase width for better readability */
+  }
   .checkbox {
     width: 24px; /* Smaller for mobile */
     height: 24px; /* Smaller for mobile */
