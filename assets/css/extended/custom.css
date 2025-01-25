@@ -38,12 +38,24 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+  position: relative; /* Required for the divider */
+}
+
+/* Add a line divider between list items */
+.list-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.5rem; /* Adjust the position of the divider */
+  height: 1px;
+  background-color: silver; /* Divider color */
 }
 
 /* Checkbox SVG */
 .checkbox {
-  width: 48px;
-  height: 48px;
+  width: 48px; /* Increased size */
+  height: 48px; /* Increased size */
   display: inline-block;
 }
 
@@ -54,8 +66,9 @@ body {
 
 /* Text Number */
 .text-number {
-  font-size: 1.7rem;
+  font-size: 1.7rem; /* Increased size */
   font-family: 'ChenYuluoyan-Thin', sans-serif;
+  color: white; /* Set text color to white */
 }
 
 /* Padding After Text Number */
@@ -65,9 +78,10 @@ body {
 
 /* Handwritten Text */
 .item-text {
-  font-size: 1.7rem;
+  font-size: 1.7rem; /* Increased size */
   line-height: 1.5;
   font-family: 'ChenYuluoyan-Thin', sans-serif;
+  color: white; /* Set text color to white */
 }
 
 /* Responsive Adjustments */
@@ -80,14 +94,14 @@ body {
     margin: 1.5rem auto;
   }
   .checkbox {
-    width: 28px;
-    height: 28px;
+    width: 40px; /* Slightly smaller for tablets */
+    height: 40px; /* Slightly smaller for tablets */
   }
   .padding-after-checkbox {
     width: 0.5rem;
   }
   .text-number, .item-text {
-    font-size: 1.1rem;
+    font-size: 1.5rem; /* Slightly smaller for tablets */
   }
   .padding-after-number {
     width: 0.75rem;
@@ -104,14 +118,14 @@ body {
     max-width: 90%;
   }
   .checkbox {
-    width: 24px;
-    height: 24px;
+    width: 36px; /* Smaller for mobile */
+    height: 36px; /* Smaller for mobile */
   }
   .padding-after-checkbox {
     width: 0.4rem;
   }
   .text-number, .item-text {
-    font-size: 1rem;
+    font-size: 1.3rem; /* Smaller for mobile */
   }
   .padding-after-number {
     width: 0.5rem;
