@@ -24,9 +24,9 @@ body {
   font-family: 'ChenYuluoyan-Thin', sans-serif;
 }
 
-/* Ensure content is readable over the background */
+/* Make the bucket list container transparent */
 .bucket-list {
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  background-color: transparent !important; /* Remove white background */
   padding: 2rem;
   border-radius: 8px;
   margin: 2rem auto;
@@ -42,8 +42,8 @@ body {
 
 /* Checkbox SVG */
 .checkbox {
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   display: inline-block;
 }
 
@@ -54,8 +54,9 @@ body {
 
 /* Text Number */
 .text-number {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: 'ChenYuluoyan-Thin', sans-serif;
+  color: var(--primary); /* Ensure text is readable */
 }
 
 /* Padding After Text Number */
@@ -65,9 +66,10 @@ body {
 
 /* Handwritten Text */
 .item-text {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   font-family: 'ChenYuluoyan-Thin', sans-serif;
+  color: var(--primary); /* Ensure text is readable */
 }
 
 /* Responsive Adjustments */
