@@ -1,0 +1,16 @@
+# Hugo-specific ignores
+/public/
+/resources/
+/.hugo_build.lock
+
+# Node.js ignores (if applicable)
+/node_modules/
+/package-lock.json
+
+# IDE-specific ignores
+/.vscode/
+/.idea/
+
+# System files
+.DS_Store
+Thumbs.db
