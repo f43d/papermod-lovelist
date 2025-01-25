@@ -74,7 +74,7 @@ body {
 
 /* Hover effect for text number */
 .text-number:hover {
-  color: #F4EAE6; /* Hover color */
+  color: #E57F84; /* Hover color */
 }
 
 /* Padding After Text Number */
@@ -93,7 +93,7 @@ body {
 
 /* Hover effect for item text */
 .item-text:hover {
-  color: #F4EAE6; /* Hover color */
+  color: #E57F84; /* Hover color */
 }
 
 /* Responsive Adjustments */
