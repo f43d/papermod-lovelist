@@ -11,8 +11,10 @@ params:
 
   # ...保留其他參數
   assets:
-    css:
+    customCSS:
       - /css/extended/custom.css
+    customJS:
+      - /js/custom.js # Add this if you created a custom.js file  
 
 
 disableKinds:
