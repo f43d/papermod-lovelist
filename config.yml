@@ -9,7 +9,7 @@ params:
   # ...保留其他參數
   assets:
     css:
-      - extended/custom.css
+      - /css/extended/custom.css
 
 
 disableKinds:
