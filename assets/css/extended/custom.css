@@ -143,3 +143,23 @@ body {
     width: 0.5rem;
   }
 }
+
+/* Cross-out effect for checked items */
+.list-item.checked .item-text,
+.list-item.checked .text-number {
+  position: relative;
+  opacity: 0.85; /* 85% opacity */
+}
+
+.list-item.checked .item-text::after,
+.list-item.checked .text-number::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px; /* Thickness of the cross-out line */
+  background-color: currentColor; /* Use the text color for the cross-out line */
+  transform: translateY(-50%) rotate(-5deg); /* Slight angle for the cross-out line */
+  opacity: 0.85; /* 85% opacity */
+}
