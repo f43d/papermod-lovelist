@@ -7,3 +7,4 @@ document.addEventListener('DOMContentLoaded', function () {
     document.documentElement.setAttribute('data-theme', 'light'); // Force light mode
   });
   
+  
