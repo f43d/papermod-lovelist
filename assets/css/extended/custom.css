@@ -17,6 +17,8 @@ body {
   padding: 0; /* Remove default body padding */
   min-height: 100vh; /* Ensure the body covers the full viewport height */
   font-family: 'ChenYuluoyan-Thin', sans-serif; /* Apply custom font globally */
+  border: 5px solid red; /* Debugging: Remove after testing */
+  background-color: yellow; /* Debugging: Remove after testing */
 }
 
 /* Ensure content is readable over the background */
@@ -37,8 +39,8 @@ body {
 
 /* Checkbox SVG */
 .checkbox {
-  width: 48px; /* Increased size */
-  height: 48px; /* Increased size */
+  width: 32px; /* Increased size */
+  height: 32px; /* Increased size */
   display: inline-block;
 }
 
@@ -49,7 +51,7 @@ body {
 
 /* Text Number */
 .text-number {
-  font-size: 1.5rem; /* Match list content size */
+  font-size: 1.25rem; /* Match list content size */
   font-family: 'ChenYuluoyan-Thin', sans-serif; /* Apply custom font */
 }
 
@@ -60,7 +62,7 @@ body {
 
 /* Handwritten Text */
 .item-text {
-  font-size: 1.5rem; /* Adjust as needed */
+  font-size: 1.25rem; /* Adjust as needed */
   line-height: 1.5; /* Ensure proper vertical alignment */
   font-family: 'ChenYuluoyan-Thin', sans-serif; /* Apply custom font */
 }
