@@ -1,110 +1,72 @@
-/* Base Styles (Desktop) */
-.number {
-    width: 60px;
-    height: 60px;
-    display: inline-block;
-  }
-  
-  .checkbox {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-  }
-  
-  .item-text {
-    font-size: 1.25rem;
-    line-height: 1.5;
-  }
-  
-  .list-item {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
-  
-  /* Tablet Styles */
-  @media (max-width: 1024px) {
-    .number {
-      width: 36px;
-      height: 20px;
-    }
-    .checkbox {
-      width: 20px;
-      height: 20px;
-    }
-    .item-text {
-      font-size: 1.1rem;
-    }
-    .list-item {
-      gap: 0.5rem;
-    }
-  }
-  
-  /* Mobile Styles (iPhone) */
-  @media (max-width: 768px) {
-    .number {
-      width: 30px;
-      height: 18px;
-    }
-    .checkbox {
-      width: 18px;
-      height: 18px;
-    }
-    .item-text {
-      font-size: 1rem;
-    }
-    .list-item {
-      gap: 0.4rem;
-    }
-  }
-/* Divider SVG */
-.divider {
-    width: 100%; /* Full width */
-    height: 2px; /* Adjust as needed */
-    margin: 1rem 0; /* Spacing above and below the divider */
-    display: block; /* Ensure it takes its own line */
-  }
-/* Tablet Styles */
-@media (max-width: 1024px) {
-    .divider {
-      height: 1.5px; /* Slightly thinner */
-      margin: 0.75rem 0; /* Reduce spacing */
-    }
-  }
-  
-  /* Mobile Styles (iPhone) */
-  @media (max-width: 768px) {
-    .divider {
-      height: 1px; /* Thinner for mobile */
-      margin: 0.5rem 0; /* Reduce spacing further */
-    }
-  }
-
-/* Define the custom font */
-@font-face {
-  font-family: 'ChenYuluoyan-Thin';
-  src: url('/fonts/ChenYuluoyan-Thin.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+/* Base Styles */
+.bucket-list {
+  font-family: 'ChenYuluoyan-Thin', sans-serif; /* Apply custom font */
 }
 
-/* Apply the custom font to the list text */
+.list-item {
+  display: flex;
+  align-items: center; /* Vertically center all items */
+  margin-bottom: 1rem; /* Spacing between items */
+}
+
+/* Checkbox SVG */
+.checkbox {
+  width: 24px; /* Adjust as needed */
+  height: 24px; /* Adjust as needed */
+  display: inline-block;
+}
+
+/* Padding After Checkbox */
+.padding-after-checkbox {
+  width: 0.75rem; /* Adjust as needed */
+}
+
+/* Text Number */
+.text-number {
+  font-size: 1.25rem; /* Match list content size */
+  font-family: 'ChenYuluoyan-Thin', sans-serif; /* Apply custom font */
+}
+
+/* Padding After Text Number */
+.padding-after-number {
+  width: 1rem; /* Adjust as needed */
+}
+
+/* Handwritten Text */
 .item-text {
-  font-family: 'ChenYuluoyan-Thin', sans-serif; /* Fallback to sans-serif */
-  font-size: 1.7rem; /* Adjust as needed */
+  font-size: 1.25rem; /* Adjust as needed */
   line-height: 1.5; /* Ensure proper vertical alignment */
 }
-/* Tablet Styles */
+
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
-  .item-text {
+  .checkbox {
+    width: 20px; /* Slightly smaller */
+    height: 20px; /* Slightly smaller */
+  }
+  .padding-after-checkbox {
+    width: 0.5rem; /* Reduce padding */
+  }
+  .text-number, .item-text {
     font-size: 1.1rem; /* Slightly smaller */
+  }
+  .padding-after-number {
+    width: 0.75rem; /* Reduce padding */
   }
 }
 
-/* Mobile Styles (iPhone) */
 @media (max-width: 768px) {
-  .item-text {
+  .checkbox {
+    width: 18px; /* Smaller for mobile */
+    height: 18px; /* Smaller for mobile */
+  }
+  .padding-after-checkbox {
+    width: 0.4rem; /* Reduce padding further */
+  }
+  .text-number, .item-text {
     font-size: 1rem; /* Smaller for mobile */
   }
+  .padding-after-number {
+    width: 0.5rem; /* Reduce padding further */
+  }
 }
-  
