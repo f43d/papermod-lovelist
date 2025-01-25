@@ -1,6 +1,14 @@
+/* Define the custom font */
+@font-face {
+  font-family: 'ChenYuluoyan-Thin';
+  src: url('/fonts/ChenYuluoyan-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Base Styles */
 .bucket-list {
-  font-family: 'ChenYuluoyan-Thin', sans-serif; /* Apply custom font */
+  font-family: 'ChenYuluoyan-Thin', sans-serif; /* Apply custom font globally */
 }
 
 .list-item {
@@ -11,8 +19,8 @@
 
 /* Checkbox SVG */
 .checkbox {
-  width: 24px; /* Adjust as needed */
-  height: 24px; /* Adjust as needed */
+  width: 32px; /* Increased size */
+  height: 32px; /* Increased size */
   display: inline-block;
 }
 
@@ -36,13 +44,14 @@
 .item-text {
   font-size: 1.25rem; /* Adjust as needed */
   line-height: 1.5; /* Ensure proper vertical alignment */
+  font-family: 'ChenYuluoyan-Thin', sans-serif; /* Apply custom font */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
   .checkbox {
-    width: 20px; /* Slightly smaller */
-    height: 20px; /* Slightly smaller */
+    width: 28px; /* Slightly smaller */
+    height: 28px; /* Slightly smaller */
   }
   .padding-after-checkbox {
     width: 0.5rem; /* Reduce padding */
@@ -57,8 +66,8 @@
 
 @media (max-width: 768px) {
   .checkbox {
-    width: 18px; /* Smaller for mobile */
-    height: 18px; /* Smaller for mobile */
+    width: 24px; /* Smaller for mobile */
+    height: 24px; /* Smaller for mobile */
   }
   .padding-after-checkbox {
     width: 0.4rem; /* Reduce padding further */
