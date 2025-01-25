@@ -165,3 +165,8 @@ html body {
   transform: translateY(-50%) rotate(-5deg); /* Slight angle for the cross-out line */
   opacity: 0.6; /* 60% opacity */
 }
+
+/* Hide the theme toggle button */
+.theme-toggle {
+  display: none !important;
+}
