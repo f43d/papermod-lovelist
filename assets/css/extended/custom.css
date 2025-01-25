@@ -68,7 +68,6 @@ body {
 .text-number {
   font-size: 1.7rem; /* Increased size */
   font-family: 'ChenYuluoyan-Thin', sans-serif;
-  color: white; /* Set text color to white */
 }
 
 /* Padding After Text Number */
@@ -81,7 +80,6 @@ body {
   font-size: 1.7rem; /* Increased size */
   line-height: 1.5;
   font-family: 'ChenYuluoyan-Thin', sans-serif;
-  color: white; /* Set text color to white */
 }
 
 /* Responsive Adjustments */
