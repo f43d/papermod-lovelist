@@ -1,10 +1,14 @@
 {{ define "main" }}
   <div class="bucket-list">
     {{ range $index, $item := .Site.Data.list }}
+      <!-- Generate random numbers for checked and unchecked SVGs -->
+      {{ $randomChecked := shuffle (seq 1 4) | first 1 }}
+      {{ $randomUnchecked := shuffle (seq 1 4) | first 1 }}
+
       <div class="list-item">
         <!-- Checkbox SVG -->
         <img 
-          src="/svg/checkboxes/{{ if $item.checked }}checked1{{ else }}unchecked1{{ end }}.svg" 
+          src="/svg/checkboxes/{{ if $item.checked }}checked{{ index $randomChecked 0 }}{{ else }}unchecked{{ index $randomUnchecked 0 }}{{ end }}.svg" 
           class="checkbox" 
           alt="Checkbox"
         >
