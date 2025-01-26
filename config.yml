@@ -6,7 +6,7 @@ params:
   # Disable PaperMod features we don’t need
   homeInfoParams: false
   socialIcons: false
-  # defaultTheme: light # Force light mode
+  defaultTheme: light # Force light mode
   disableThemeToggle: true # Disable the theme toggle button
 
   # Other parameters
