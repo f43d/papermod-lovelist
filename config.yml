@@ -9,7 +9,7 @@ params:
   defaultTheme: light # Force light mode
   disableThemeToggle: true # Disable the theme toggle button
 
-  # ...保留其他參數
+  # Other parameters
   assets:
     customCSS:
       - /css/extended/custom.css
@@ -21,3 +21,4 @@ disableKinds:
   - term
   - RSS
   - sitemap
+
