@@ -7,7 +7,7 @@ params:
   homeInfoParams: false
   socialIcons: false
   defaultTheme: auto # auto mode
-  disableThemeToggle : true # Disable the theme toggle button
+  disableThemeToggle: true
 
   # ...保留其他參數
   assets:
