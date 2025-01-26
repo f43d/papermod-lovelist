@@ -170,3 +170,15 @@ html body {
 .theme-toggle {
   display: none !important;
 }
+
+/* Force light mode */
+:root {
+  --theme: rgb(255, 255, 255) !important; /* Background color */
+  --primary: rgb(30, 30, 30) !important; /* Text color */
+  --secondary: rgb(108, 108, 108) !important;
+  --tertiary: rgb(214, 214, 214) !important;
+  --content: rgb(31, 31, 31) !important;
+  --code-block-bg: rgb(28, 29, 33) !important;
+  --code-bg: rgb(245, 245, 245) !important;
+  --border: rgb(238, 238, 238) !important;
+}

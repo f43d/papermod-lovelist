@@ -9,6 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log('Theme toggle button not found');
     }
     document.documentElement.setAttribute('data-theme', 'light'); // Force light mode
-  });  
+  });
   
   
