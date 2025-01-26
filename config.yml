@@ -6,16 +6,15 @@ params:
   # Disable PaperMod features we don’t need
   homeInfoParams: false
   socialIcons: false
-  defaultTheme: dark # auto mode
-  disableThemeToggle: true
+  defaultTheme: dark # Force dark mode
+  disableThemeToggle: true # Disable the theme toggle button
 
   # ...保留其他參數
   assets:
     customCSS:
       - /css/extended/custom.css
     customJS:
-      - /js/custom.js # Add this if you created a custom.js file  
-
+      - /js/custom.js # Add this if you created a custom.js file
 
 disableKinds:
   - taxonomy
