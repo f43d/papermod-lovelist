@@ -191,7 +191,7 @@ html body {
   right: 0;
   padding: 1rem;
   z-index: 1000; /* Ensure it stays above other content */
-  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white rbga a vaule from 0 to 1*/
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white rbga a vaule from 0 to 1*/
   backdrop-filter: blur(10px); /* Frosted glass effect */
   /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
