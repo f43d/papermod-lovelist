@@ -189,9 +189,10 @@ html body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
   padding: 1rem;
   z-index: 1000; /* Ensure it stays above other content */
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
@@ -211,6 +212,7 @@ html body {
   height: 6em; /* Square image */
   border-radius: 50%; /* Circular image */
   object-fit: cover; /* Ensure the image fits well */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Light border for contrast */
 }
 
 /* Header Text Container */
@@ -237,7 +239,7 @@ html body {
 .header-text p {
   font-size: 1em; /* Relative to parent */
   margin: 0.5rem 0 0;
-  color: #666; /* Subtle text color */
+  color: #2f5061; /* Match your theme */
 }
 
 /* Adjust Bucket List Margin to Account for Fixed Header */
