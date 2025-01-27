@@ -1,11 +1,30 @@
 {{ define "main" }}
+  <!-- Header Section -->
+  <div class="header">
+    <!-- Placeholder Image -->
+    <div class="header-image">
+      <img src="/images/placeholder.jpg" alt="Header Image">
+    </div>
+
+    <!-- Counter Section -->
+    <div class="counter">
+      <span id="days-counter">0</span> 天
+    </div>
+
+    <!-- Title and Description -->
+    <div class="header-text">
+      <h1>和你做的 100件事</h1>
+      <p>这是我们一起庆祝婚姻的 100 件事清单。</p>
+    </div>
+  </div>
+
+  <!-- Bucket List -->
   <div class="bucket-list">
     {{ range $index, $item := .Site.Data.list }}
       {{ $randomChecked := shuffle (seq 1 4) | first 1 }}
       {{ $randomUnchecked := shuffle (seq 1 4) | first 1 }}
 
-      <!-- Add .checked class conditionally -->
-      <div class="list-item {{ if $item.checked }}checked{{ end }}"> <!-- Updated line -->
+      <div class="list-item {{ if $item.checked }}checked{{ end }}">
         <img 
           src="/svg/checkboxes/{{ if $item.checked }}checked{{ index $randomChecked 0 }}{{ else }}unchecked{{ index $randomUnchecked 0 }}{{ end }}.svg" 
           class="checkbox" 
@@ -16,11 +35,8 @@
           {{ printf "%02d." $index }}
         </span>
         <span class="padding-after-number"></span>
-
-        <!-- Optional: Make text clickable using the link field -->
-        <a href="{{ $item.link }}" class="item-text">{{ $item.text }}</a> <!-- Updated line -->
+        <a href="{{ $item.link }}" class="item-text">{{ $item.text }}</a>
       </div>
     {{ end }}
   </div>
 {{ end }}
-
