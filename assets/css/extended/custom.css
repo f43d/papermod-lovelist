@@ -307,3 +307,8 @@ html body {
     margin-top: 120px; /* Adjust for smaller header */
   }
 }
+
+/* Adjust the footer font size */
+.footer {
+  font-size: 18px; /* Change this value as needed */
+}
