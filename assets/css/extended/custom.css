@@ -197,11 +197,11 @@ html body {
   padding: 1rem;
   z-index: 1000; /* Ensure it stays above other content */
   background-color: rgba(255, 255, 255, 0.2); /* More transparent */
-  backdrop-filter: blur(5px); /* Softer frosted glass effect */
+  backdrop-filter: blur(3px); /* Softer frosted glass effect */
   max-width: 800px; /* Match the width of the list */
   margin: 0 auto; /* Center the header */
   border-radius: 8px; /* Optional: Add rounded corners */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
 }
 
 /* Header Content Container */
