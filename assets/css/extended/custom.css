@@ -200,8 +200,8 @@ html body {
   backdrop-filter: blur(3px); /* Softer frosted glass effect */
   max-width: 800px; /* Match the width of the list */
   margin: 0 auto; /* Center the header */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+  border-radius: 15px; /* Optional: Add rounded corners */
+  border: 0px solid rgba(255, 255, 255, 0); /* Subtle border */
 }
 
 /* Header Content Container */
