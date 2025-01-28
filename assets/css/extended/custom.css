@@ -312,3 +312,15 @@ html body {
 .footer {
   font-size: 25px; /* Change this value as needed */
 }
+
+/* Custom Tag Line Styles */
+.custom-tagline {
+  font-family: 'Roboto', sans-serif; /* Custom font */
+  font-size: 18px; /* Font size */
+  color: #555; /* Text color */
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Space below the tag line */
+  padding-top: 20px; /* Space above the tag line */
+  border-bottom: 1px solid #ddd; /* Optional border */
+  padding-bottom: 10px; /* Space below the text */
+}
