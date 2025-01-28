@@ -97,7 +97,7 @@
   },
   {
     "id": 16,
-    "text": "參加兩個仔嘅大學畢業典禮",
+    "text": "參加兩個仔中學畢業典禮",
     "checked": false,
     "link": "https://example.com"
   },
@@ -193,7 +193,7 @@
   },
   {
     "id": 32,
-    "text": "大家用一條頸巾",
+    "text": "天寒地凍共用一條頸巾出街",
     "checked": false,
     "link": "https://example.com"
   },
@@ -247,7 +247,7 @@
   },
   {
     "id": 41,
-    "text": "一齊浸露天溫泉",
+    "text": "對着大海浸露天溫泉",
     "checked": false,
     "link": "https://example.com"
   },
@@ -295,13 +295,13 @@
   },
   {
     "id": 49,
-    "text": "摘士多啤梨",
+    "text": "去士多啤梨農埸喪食士多啤梨",
     "checked": false,
     "link": "https://example.com"
   },
   {
     "id": 50,
-    "text": "坐叮叮車從西環到筲箕灣，數哪區的霓虹燈最靚",
+    "text": "坐叮叮夜遊港島",
     "checked": false,
     "link": "https://example.com"
   },
@@ -325,7 +325,7 @@
   },
   {
     "id": 54,
-    "text": "把婚戒送去翻新刻上孩子出生年份",
+    "text": "分(好多)段完成香港四徑",
     "checked": false,
     "link": "https://example.com"
   },
@@ -355,7 +355,7 @@
   },
   {
     "id": 59,
-    "text": "參加「黑暗中對話」體驗，牽手完成75分鐘全黑旅程",
+    "text": "參加「黑暗中對話」體驗牽手完成75分鐘全黑旅程",
     "checked": false,
     "link": "https://example.com"
   },
@@ -367,7 +367,7 @@
   },
   {
     "id": 61,
-    "text": "在PMQ手作市集訂製一對「銀婚紀念」陶瓷杯",
+    "text": "到高野山宿坊",
     "checked": false,
     "link": "https://example.com"
   },
@@ -379,7 +379,7 @@
   },
   {
     "id": 63,
-    "text": "每月找出結婚舊照片，用拍立得重現相同構圖",
+    "text": "參加兩個仔嘅大學畢業典禮",
     "checked": false,
     "link": "https://example.com"
   },
@@ -391,7 +391,7 @@
   },
   {
     "id": 65,
-    "text": "在深水埗棚仔布料市場找最醜花布，縫成搞笑圍裙",
+    "text": "坐郵輪環游世界",
     "checked": false,
     "link": "https://example.com"
   },
@@ -400,5 +400,12 @@
     "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
     "checked": false,
     "link": "https://example.com"
+  },
+  {
+    "id": 99,
+    "text": "執子之手 與子偕老",
+    "checked": false,
+    "link": "https://example.com"
   }
+
 ]
