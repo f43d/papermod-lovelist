@@ -1,0 +1,24 @@
+baseURL: "https://buc.ketli.st"
+title: "我們的生活"
+theme: PaperMod
+language: zh-tw
+params:
+  # Disable PaperMod features we don’t need
+  homeInfoParams: false
+  socialIcons: false
+  defaultTheme: light # Force light mode
+  disableThemeToggle: true # Disable the theme toggle button
+
+  # Other parameters
+  assets:
+    customCSS:
+      - /css/extended/custom.css
+    customJS:
+      - /js/custom.js # Add this if you created a custom.js file
+
+disableKinds:
+  - taxonomy
+  - term
+  - RSS
+  - sitemap
+
