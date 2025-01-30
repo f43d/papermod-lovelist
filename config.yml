@@ -1,7 +1,7 @@
 baseURL: "https://buc.ketli.st"
-title: ""
+title: "我們的生活"
 theme: PaperMod
-
+language: zh-tw
 params:
   # Disable PaperMod features we don’t need
   homeInfoParams: false
