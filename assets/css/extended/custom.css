@@ -311,7 +311,7 @@ html body {
 /* Adjust the footer font size */
 .footer {
   font-size: 20px; /* Change this value as needed */
-  color: beige; /* font color */
+  color:black /* font color */
 }
 
 /* Custom Tag Line Styles */
