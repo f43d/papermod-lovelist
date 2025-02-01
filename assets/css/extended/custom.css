@@ -215,11 +215,11 @@ html body {
 
 /* Header Image */
 .header-image img {
-  width: 6em; /* Relative to font size */
-  height: 6em; /* Square image */
-  border-radius: 50%; /* Circular image */
+  width: 8%; /* Relative to font size */
+  height: 6em; /* Retanglar image */
+  /* border-radius: 50%; /* Circular image */
   object-fit: cover; /* Ensure the image fits well */
-  border: 2px solid rgba(255, 255, 255, 0.5); /* Light border for contrast */
+  /* border: 2px solid rgba(255, 255, 255, 0.5); /* Light border for contrast */
 }
 
 /* Header Text Container */
