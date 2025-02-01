@@ -215,7 +215,7 @@ html body {
 
 /* Header Image */
 .header-image img {
-  width: 8%; /* Relative to font size */
+  width: 8em; /* Relative to font size */
   height: 6em; /* Retanglar image */
   /* border-radius: 50%; /* Circular image */
   object-fit: cover; /* Ensure the image fits well */
